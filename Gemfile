@@ -8,5 +8,5 @@ gem 'faker'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'rake'
-gem 'rack'
+gem "rack",      ">= 1.3.0"
 gem 'rack-test'
