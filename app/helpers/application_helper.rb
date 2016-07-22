@@ -12,7 +12,7 @@ module ApplicationHelper
 		if person.new_record?
 			@action = "/people/"
 		else
-			@action = "/people/person.id"
+			@action = "/people/#{person.id}"
 		end
 		@action
 	end
@@ -30,10 +30,9 @@ module ApplicationHelper
 		if person.new_record?
 			@id="new-person"
 		else
-			@id="people/#{id}"
+			@id="#{person.id}"
 		end
-		@id
 	end
-end
 		
+end
 

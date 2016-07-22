@@ -1,13 +1,30 @@
-<form class="<%= people_form_class(@person) %>" id="<%=people_form_id(@person) %>" action="<%= people_form_action(@person) %>" method="post">
-<input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
-<label for="first_name">First Name:</label>
-  <input type="text" name="first_name" value="<%= @person.first_name %>" />
-  
-  <label for="last_name">Last Name:</label>  
-  <input type="text" name="last_name" value="<%= @person.last_name %>" />
-  
-  <label for="birthdate">Birthdate:</label>
-  <input name="birthdate" type="date" value="<%= @person.birthdate %>" />
-  
-  <input type="submit" />
-  </form>
+<div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-3">
+          </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="ecform">
+                    <form class="<%= people_form_class(@person) %>" id="<%=people_form_id(@person) %>" action="<%= people_form_action(@person) %>" method="post">
+                        <input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
+                        <div>
+                        <label for="first_name">First Name:</label>
+                          <input type="text" name="first_name" value="<%= @person.first_name %>" />
+                          </div><br>
+                          <div>
+                          <label for="last_name">Last Name:</label>  
+                          <input type="text" name="last_name" value="<%= @person.last_name %>" />
+                          </div><br>
+                          <div>
+                          <label for="birthdate">Birthdate:</label>
+                          <input name="birthdate" type="date" value="<%= @person.birthdate %>" />
+                          </div><br>
+                          <div>
+                          <input type="submit" />
+                          </div>
+                    </form>
+                    </div><!--ecform-->              
+              </div>
+              <div class="col-lg-3 col-md-3">
+              </div>
+      </div>
+</div>

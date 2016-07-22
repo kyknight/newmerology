@@ -1,0 +1,52 @@
+.new-person {
+opacity: 80%;
+font-family: serif;
+}
+body {
+	
+}
+header {
+background-color: #06658D;
+	border-radius: 10px;
+	font-family: Georgia;
+	padding:5px;
+	text-align: center;
+	color: white;
+}
+.show {
+	font-family: Georgia;
+	border-radius: 10px;
+	border-style: solid;
+	background-color: #2795C0;
+	padding:20px;
+	text-align: center;
+	color:white;
+}
+.show p{
+	font-size: 20px;
+}
+.edit-person {
+font-family: serif;
+}
+.ecform {
+	background-color: #2795C0;
+	border-radius: 10px;
+	padding:20px;
+	font-size: 30px;
+	text-align: center;
+
+}
+a {
+	color: yellow;
+}
+td {
+	background-color: #06658D;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Georgia;
+	padding:5px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+
+}

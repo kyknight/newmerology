@@ -1,3 +1,13 @@
-<h1><%= "#{@person.first_name} #{@person.last_name}" %></h1>
-<p>Birthdate: <%= "#{@person.birthdate}" %></p>
-<p><%= "#{@message}" %></p>
+<div class="container">
+	<div class="show">
+		<div class="row">
+			<div class="col-lg-4 col-sm-3">
+				<h1><%= "#{@person.first_name} #{@person.last_name}" %></h1>
+				<p>Birthdate: <%= "#{@person.birthdate}" %></p>
+			</div>
+			<div class="col-lg-8 col-sm-9">
+				<p><%= "#{@message}" %></p>
+			</div>
+		</div><!--row-->
+	</div><!--show-->
+</div><!--container-->
