@@ -28,9 +28,9 @@ module ApplicationHelper
 
 	def people_form_id(person)
 		if person.new_record?
-			@id="new-person"
+			@form_id="new-person"
 		else
-			@id="#{person.id}"
+			@form_id="#{person.id}"
 		end
 	end
 		

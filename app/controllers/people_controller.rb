@@ -17,7 +17,7 @@ post '/people' do
   end
   
   person = Person.create(first_name: params[:first_name], last_name: params[:last_name], birthdate: birthdate)
-  redirect "/people/#{person.id}"
+    redirect "/people/#{@person.id}"
 end
 
 get '/people/:id/edit' do
@@ -31,7 +31,7 @@ put '/people/:id' do
   person.last_name = params[:last_name]
   person.birthdate = params[:birthdate]
   person.save
-  redirect "/people/#{person.id}"
+  redirect "/people/#{@person.id}"
 end
 
 get '/people/:id' do
